@@ -1,5 +1,3 @@
-jdownloader 2 headless for arm64 board 
-
 Clone from https://github.com/PlusMinus0/headless-jd2-docker
 
 **RUN**
@@ -20,7 +18,7 @@ sudo docker run \
 **BUILD** 
 
 ```
-docker build -t skywirex/jdownloader-2:debian-arm64-v20191202 .
+docker build -t skywirex/jdownloader-2 .
 ```
 
 If you don't want to specify your credentials on the command line, remove them from the command above (`-e EMAIL=... -e PASSWORD=...`) 
@@ -30,7 +28,7 @@ and add them manually to the file`<config-dir>/org.jdownloader.api.myjdownloader
 { "email" : "your email", "password" : "your-password" }
 ```
     
-# Optional environment variables
+**Optional environment variables**
 
 Environment Variable | Description
 ---------------------|------------
