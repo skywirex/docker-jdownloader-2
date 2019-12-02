@@ -1,0 +1,43 @@
+file:
+  /opt/JDownloader/JDownloader.jar:
+    exists: true
+    mode:
+      or:
+      - "0664"
+      - "0644"
+    filetype: file
+    contains: []
+  /opt/JDownloader/sevenzipjbinding1509.jar:
+    exists: true
+    mode:
+      or:
+      - "0664"
+      - "0644"
+    filetype: file
+    contains: []
+  /opt/JDownloader/sevenzipjbinding1509Linux.jar:
+    exists: true
+    mode:
+      or:
+      - "0664"
+      - "0644"
+    filetype: file
+    contains: []
+  /tmp:
+    exists: true
+    mode: "1777"
+    filetype: directory
+package:
+  ffmpeg:
+    installed: true
+  jq:
+    installed: true
+user:
+  jdownloader:
+    exists: true
+    uid: 1000
+    gid: 100
+    groups:
+    - users
+    home: []
+    shell: /bin/false
